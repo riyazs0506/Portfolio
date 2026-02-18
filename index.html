@@ -1,148 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mohammed Riyaz | Full Stack Developer</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohammed Riyaz | Elite Portfolio v7</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </head>
+
 <body>
-  <header class="main-header">
-    <div class="container">
-      <h1 class="logo">Mohammed <span>Riyaz</span></h1>
-      <nav>
-        <ul class="nav">
-          <li><a href="#home" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
 
-  <section id="home" class="home-section">
-    <div class="container home-content">
-      <div class="home-text">
-        <h2>Hi, I'm <span class="highlight">Mohammed Riyaz</span></h2>
-        <p class="lead">I am a <span id="typed-role"></span></p>
-        <div class="cta-buttons">
-          <a href="mohammedriyazs resume (1).pdf" class="btn primary" download>Download CV</a>
-          <a href="mohammedriyazs resume (1).pdf" class="btn secondary" target="_blank">View Resume</a>
-        </div>
-      </div>
-      <div class="home-image">
-        <img src="IMG-20250301-WA0079.jpg" alt="Mohammed Riyaz Photo">
-      </div>
-    </div>
-  </section>
+<div id="particles-js"></div>
+<div class="scroll-progress"></div>
 
-  <section id="about" class="section">
-    <div class="container about-section-content">
-      <div class="about-text">
-        <h2>About Me</h2>
-        <p>I’m a curious and passionate undergraduate in Computer Science and Design. I love crafting intuitive web interfaces and robust backend systems. I aim to make the web a better place through functional and beautiful applications.</p>
-      </div>
-    </div>
-  </section>
+<!-- HEADER -->
+<header class="fixed-top glass-header">
+<div class="container d-flex justify-content-between align-items-center py-3">
+<h4 class="fw-bold text-white">Mohammed <span class="text-warning">Riyaz</span></h4>
 
-  <section id="skills" class="section alt">
-    <div class="container">
-      <h2>Skills</h2>
-      <div class="grid">
-        <span class="tag">HTML</span>
-        <span class="tag">CSS</span>
-        <span class="tag">JavaScript</span>
-        <span class="tag">Python</span>
-        <span class="tag">Java</span>
-        <span class="tag">Spring Boot</span>
-        <span class="tag">UI/UX</span>
-        <span class="tag">Figma</span>
-      </div>
-    </div>
-  </section>
+<nav>
+<ul class="nav">
+<li class="nav-item"><a class="nav-link text-white" href="#home">Home</a></li>
+<li class="nav-item"><a class="nav-link text-white" href="#education">Education</a></li>
+<li class="nav-item"><a class="nav-link text-white" href="#skills">Skills</a></li>
+<li class="nav-item"><a class="nav-link text-white" href="#projects">Projects</a></li>
+<li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
 
-  <section id="projects" class="section">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="grid projects">
-        <div class="card">
-          <img src="recipe.jpg" alt="Recipe System">
-          <h3>Recipe Management System</h3>
-          <p>Manage and browse recipes with a secure login system.</p>
-          <a href="https://github.com/riyazs0506/recipe-managament-system" target="_blank">View Project</a>
-        </div>
-        <div class="card">
-          <img src="Screenshot 2025-06-25 092936.png" alt="SGRE Windmill">
-          <h3>SGRE WINDMILL</h3>
-          <p>Investment calculator and tracker with user interface.</p>
-          <a href="https://github.com/riyazs0506/SGRE-calculate" target="_blank">View Project</a>
-        </div>
-      </div>
-    </div>
-  </section>
+<!-- HERO -->
+<section id="home" class="vh-100 d-flex align-items-center">
+<div class="container">
+<div class="row align-items-center">
 
-  <section id="contact" class="section alt">
-    <div class="container">
-      <h2>Contact</h2>
-      <ul class="contact-list">
-        <li><i class="fas fa-envelope"></i> mohammedriyazs0506@gmail.com</li>
-        <li><i class="fas fa-phone"></i> +91 9994140525</li>
-        <li><i class="fas fa-map-marker-alt"></i> Erode, Tamil Nadu, India</li>
-      </ul>
-    </div>
-  </section>
+<div class="col-md-6">
+<h1 class="fw-bold">
+Hi, I'm <span class="text-warning">Mohammed Riyaz</span>
+</h1>
 
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 Mohammed Riyaz. All rights reserved.</p>
-    </div>
-  </footer>
+<h4 class="typing-text mt-3"></h4>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const navLinks = document.querySelectorAll('.nav a');
-      const roles = ["Full Stack Developer", "UI/UX Designer", "Problem Solver"];
-      let index = 0, i = 0;
+<p class="lead mt-3">
+Full Stack Developer building scalable enterprise applications using Python, Java & MySQL.
+</p>
 
-      function setActiveLink() {
-        const fromTop = window.scrollY + 100;
-        navLinks.forEach(link => {
-          const section = document.querySelector(link.getAttribute('href'));
-          if (section && section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
-            link.classList.add('active');
-          } else {
-            link.classList.remove('active');
-          }
-        });
-      }
+<a href="assets/resume.pdf" download class="btn btn-warning mt-3">
+Download CV
+</a>
 
-      setActiveLink();
-      window.addEventListener('scroll', setActiveLink);
+<div class="social-icons mt-4">
+<a href="https://github.com/riyazs0506" target="_blank"><i class="bi bi-github"></i></a>
+<a href="https://linkedin.com/in/mohammed-riyaz" target="_blank"><i class="bi bi-linkedin"></i></a>
+<a href="mailto:mohammedriyazs0506@gmail.com"><i class="bi bi-envelope"></i></a>
+</div>
 
-      function typeRole() {
-        const el = document.getElementById("typed-role");
-        if (!el) return;
+</div>
 
-        if (i < roles[index].length) {
-          el.innerHTML += roles[index][i];
-          i++;
-          setTimeout(typeRole, 100);
-        } else {
-          setTimeout(() => {
-            el.innerHTML = "";
-            i = 0;
-            index = (index + 1) % roles.length;
-            typeRole();
-          }, 1500);
-        }
-      }
+<div class="col-md-6 text-center">
+<img src="assets/profile.jpg" class="img-fluid hero-img" width="320">
+</div>
 
-      typeRole();
-    });
-  </script>
+</div>
+</div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="py-5">
+<div class="container">
+<h2 class="text-center text-warning">Education</h2>
+
+<div class="timeline mt-5">
+<div class="timeline-item">
+<div class="timeline-content">
+<h5>B.E Computer Science and Design</h5>
+<p>Kongu Engineering College</p>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-content">
+<h5>HSC – 82%</h5>
+<p>Kongu Kalvi Nilayam Matric HR Sec School</p>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-content">
+<h5>SSLC</h5>
+<p>Kongu Kalvi Nilayam Matric HR Sec School</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="py-5 bg-dark">
+<div class="container">
+<h2 class="text-center text-warning">Technical Skills</h2>
+
+<div class="row mt-5">
+<div class="col-md-6 mb-4">
+<label>Python</label>
+<div class="progress">
+<div class="progress-bar bg-warning skill-bar" data-width="90%">90%</div>
+</div>
+</div>
+
+<div class="col-md-6 mb-4">
+<label>MySQL</label>
+<div class="progress">
+<div class="progress-bar bg-warning skill-bar" data-width="85%">85%</div>
+</div>
+</div>
+
+<div class="col-md-6 mb-4">
+<label>Java</label>
+<div class="progress">
+<div class="progress-bar bg-warning skill-bar" data-width="75%">75%</div>
+</div>
+</div>
+
+<div class="col-md-6 mb-4">
+<label>UI / UX</label>
+<div class="progress">
+<div class="progress-bar bg-warning skill-bar" data-width="80%">80%</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="py-5">
+<div class="container">
+<h2 class="text-center text-warning">Enterprise Projects</h2>
+
+<div class="row g-4 mt-4">
+
+<!-- 1 -->
+<div class="col-md-4">
+<div class="card custom-card h-100">
+<div class="card-body d-flex flex-column">
+
+<h5>Student Management System</h5>
+<p class="flex-grow-1">
+Full academic management platform with attendance,
+marks management, authentication and reporting dashboard.
+</p>
+
+<div class="mb-3">
+<span class="badge bg-warning text-dark">Python</span>
+<span class="badge bg-warning text-dark">MySQL</span>
+<span class="badge bg-warning text-dark">Flask</span>
+</div>
+
+<div class="project-links mt-auto">
+<a href="https://github.com/riyazs0506/student-management-system"
+target="_blank"
+class="btn btn-sm btn-outline-warning me-2">
+<i class="bi bi-github"></i> GitHub
+</a>
+
+<a href="https://student-management-system.onrender.com"
+target="_blank"
+class="btn btn-sm btn-warning">
+<i class="bi bi-box-arrow-up-right"></i> Live Demo
+</a>
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- 2 -->
+<div class="col-md-4">
+<div class="card custom-card h-100">
+<div class="card-body d-flex flex-column">
+
+<h5>NexusHire Placement Portal</h5>
+<p class="flex-grow-1">
+Enterprise recruitment portal connecting students,
+companies and admin approval workflows.
+</p>
+
+<div class="mb-3">
+<span class="badge bg-warning text-dark">Python</span>
+<span class="badge bg-warning text-dark">MySQL</span>
+<span class="badge bg-warning text-dark">Flask</span>
+</div>
+
+<div class="project-links mt-auto">
+<a href="https://github.com/riyazs0506/nexushire-placement-portal"
+target="_blank"
+class="btn btn-sm btn-outline-warning me-2">
+<i class="bi bi-github"></i> GitHub
+</a>
+
+<a href="https://nexushire.onrender.com"
+target="_blank"
+class="btn btn-sm btn-warning">
+<i class="bi bi-box-arrow-up-right"></i> Live Demo
+</a>
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- 3 -->
+<div class="col-md-4">
+<div class="card custom-card h-100">
+<div class="card-body d-flex flex-column">
+
+<h5>CricPro Academy System</h5>
+<p class="flex-grow-1">
+Sports academy management system with player tracking,
+performance analytics and fee automation.
+</p>
+
+<div class="mb-3">
+<span class="badge bg-warning text-dark">Python</span>
+<span class="badge bg-warning text-dark">MySQL</span>
+</div>
+
+<div class="project-links mt-auto">
+<a href="https://github.com/riyazs0506/cricpro-academy-system"
+target="_blank"
+class="btn btn-sm btn-outline-warning me-2">
+<i class="bi bi-github"></i> GitHub
+</a>
+
+<a href="https://cricpro-academy.onrender.com"
+target="_blank"
+class="btn btn-sm btn-warning">
+<i class="bi bi-box-arrow-up-right"></i> Live Demo
+</a>
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- 4 -->
+<div class="col-md-4">
+<div class="card custom-card h-100">
+<div class="card-body d-flex flex-column">
+
+<h5>IPL Auction Online System</h5>
+<p class="flex-grow-1">
+Real-time IPL auction simulation using SocketIO,
+live bidding engine and team balance logic.
+</p>
+
+<div class="mb-3">
+<span class="badge bg-warning text-dark">Python</span>
+<span class="badge bg-warning text-dark">MySQL</span>
+<span class="badge bg-warning text-dark">SocketIO</span>
+</div>
+
+<div class="project-links mt-auto">
+<a href="https://github.com/riyazs0506/ipl-auction-system"
+target="_blank"
+class="btn btn-sm btn-outline-warning me-2">
+<i class="bi bi-github"></i> GitHub
+</a>
+
+<a href="https://ipl-auction.onrender.com"
+target="_blank"
+class="btn btn-sm btn-warning">
+<i class="bi bi-box-arrow-up-right"></i> Live Demo
+</a>
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- 5 -->
+<div class="col-md-4">
+<div class="card custom-card h-100">
+<div class="card-body d-flex flex-column">
+
+<h5>SGRE Management System</h5>
+<p class="flex-grow-1">
+Windmill investment and operational monitoring system
+built with Java backend and MySQL database.
+</p>
+
+<div class="mb-3">
+<span class="badge bg-warning text-dark">Java</span>
+<span class="badge bg-warning text-dark">MySQL</span>
+</div>
+
+<div class="project-links mt-auto">
+<a href="https://github.com/riyazs0506/sgre-management-system"
+target="_blank"
+class="btn btn-sm btn-outline-warning me-2">
+<i class="bi bi-github"></i> GitHub
+</a>
+
+<a href="https://sgre-management.onrender.com"
+target="_blank"
+class="btn btn-sm btn-warning">
+<i class="bi bi-box-arrow-up-right"></i> Live Demo
+</a>
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- 6 -->
+<div class="col-md-4">
+<div class="card custom-card h-100">
+<div class="card-body d-flex flex-column">
+
+<h5>Nexovate26 Event Platform</h5>
+<p class="flex-grow-1">
+Student event registration platform with admin approval,
+email notifications and participant tracking.
+</p>
+
+<div class="mb-3">
+<span class="badge bg-warning text-dark">Python</span>
+<span class="badge bg-warning text-dark">MySQL</span>
+<span class="badge bg-warning text-dark">Flask</span>
+</div>
+
+<div class="project-links mt-auto">
+<a href="https://github.com/riyazs0506/nexovate26-event-platform"
+target="_blank"
+class="btn btn-sm btn-outline-warning me-2">
+<i class="bi bi-github"></i> GitHub
+</a>
+
+<a href="https://nexovate26.onrender.com"
+target="_blank"
+class="btn btn-sm btn-warning">
+<i class="bi bi-box-arrow-up-right"></i> Live Demo
+</a>
+</div>
+
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-5 bg-dark">
+<div class="container">
+<h2 class="text-center text-warning">Contact Me</h2>
+
+<form id="contact-form" class="col-md-6 mx-auto mt-4">
+<input type="text" name="title" class="form-control mb-3" placeholder="Subject" required>
+<input type="text" name="name" class="form-control mb-3" placeholder="Your Name" required>
+<input type="email" name="email" class="form-control mb-3" placeholder="Your Email" required>
+<textarea name="message" class="form-control mb-3" placeholder="Your Message" required></textarea>
+<button type="submit" class="btn btn-warning w-100">Send Message</button>
+</form>
+</div>
+</section>
+
+<footer class="text-center py-4 bg-black text-secondary">
+<p>© 2026 Mohammed Riyaz | Portfolio </p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+<script src="js/script.js"></script>
+
 </body>
 </html>
